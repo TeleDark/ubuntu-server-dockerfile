@@ -6,6 +6,10 @@
 wget https://raw.githubusercontent.com/TeleDark/ubuntu-server-dockerfile/main/Dockerfile
 ```
 
+## change root password in Dockerfile 
+
+line 12 `RUN echo 'root:{RootPassword}' | chpasswd`
+
 ## how to build Dockerfile
 ```
 docker build -t t-server .
